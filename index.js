@@ -14,5 +14,6 @@ module.exports = {
         'ember-dialog/utils/highest-zindex': ["default"]
       }
     });
+	app.import('bower_components/ember-dialog/dist/ember.dialog.min.css');
   }
 };
