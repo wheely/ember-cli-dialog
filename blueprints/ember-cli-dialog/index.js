@@ -1,8 +1,7 @@
 module.exports = {
-  normalizeEntityName: function() {
-  },
+    normalizeEntityName: function() { },
 
-  afterInstall: function() {
-    return this.addBowerPackageToProject('ember-dialog', '1.0.0-rc.1');
-  }
+    afterInstall: function() {
+        return this.addBowerPackageToProject('ember-dialog', '1.0.0-rc.1');
+    }
 };
