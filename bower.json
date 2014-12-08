@@ -13,7 +13,7 @@
     "ember-qunit": "0.1.8",
     "ember-qunit-notifications": "0.0.4",
     "qunit": "~1.15.0",
-    "ember-dialog": "~1.1.2"
+    "ember-dialog": "~1.2.2"
   },
   "resolutions": {
     "jquery": "~2.1.0",
