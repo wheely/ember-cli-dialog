@@ -1,12 +1,5 @@
-# Ember-cli-dialog
+# Ember.Dialog [![Build Status](https://secure.travis-ci.org/wheely/ember-cli-dialog.svg)](http://travis-ci.org/wheely/ember-cli-dialog) [![license](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](https://github.com/wheely/ember-dialog/blob/master/LICENSE)
 
-This Ember addon wraps [ember-dialog](https://github.com/wheely/ember-dialog) library.
+## Introduction
 
-## Installation
-
-```bash
-$ npm install --save ember-cli-dialog
-$ ember generate ember-cli-dialog
-```
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/). For more information on using ember-dialog, visit [https://github.com/wheely/ember-dialog](https://github.com/wheely/ember-dialog).
+This extension allows you to create dialog windows, see the [docs](http://wheely.github.io/ember-cli-dialog/) for more details.

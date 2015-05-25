@@ -1,17 +1,25 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+.bundle
+bundle
+tmp/
+tests/source/
+dist/
+temporary_directory_for_deploy/
+.idea
+*.iml
 
-# compiled output
-/dist
-/tmp
+.DS_Store
+.project
 
-# dependencies
-/node_modules
-/bower_components
+.github-upload-token
+*.swp
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage/*
-/libpeerconnection.log
+tests/ember-data-tests.js
+*gem
+
+docs/build/
+docs/node_modules/
+
+node_modules/
+bower_components/
+.metadata_never_index
 npm-debug.log
-testem.log
