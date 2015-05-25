@@ -5,7 +5,6 @@
         "-Promise",
         "-Map",
         "Ember",
-        "DS",
         "Dialog",
         "Handlebars",
         "Metamorph",
