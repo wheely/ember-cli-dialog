@@ -53,6 +53,9 @@ Presenter = Ember.Component.extend({
     // method will not be finished.
      Ember.run.scheduleOnce('afterRender', this, function() {
 
+      // The dialog is destroyed or destroying
+      if (this._state !== 'inDOM') { return; }
+
       var dialog, zindex;
 
       // If z-index should be fixed - do not change it
@@ -101,7 +104,10 @@ Presenter = Ember.Component.extend({
     @return {Ember.RSVP.Promise}
   */
   close: function() {
-    return this.get('dialogManager').close(this.get('name'));
+    var accept = Ember.run.bind(this, function() {
+      this.get('resolved').call(this, this);
+    });
+    return this.get('dialogManager').close(this.get('name')).then(accept);
   },
 
   /**
@@ -194,6 +200,7 @@ Presenter = Ember.Component.extend({
       @method decline
     */
     decline: function(dialog) {
+      console.log("DECLINE");
       this.decline();
     },
 
@@ -202,6 +209,7 @@ Presenter = Ember.Component.extend({
       @method decline
     */
     accept: function(dialog) {
+      console.log("ACCEPT");
       this.accept();
     }
 

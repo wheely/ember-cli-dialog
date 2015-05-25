@@ -411,6 +411,7 @@ Manager = Service.extend(Ember.Evented, {
       var dialog = this.getDialog(name);
       Ember.ENV.LOG_DIALOG && Ember.Logger.log('%cDialogManager:%c Closing the dialog named %s', 'font-weight: 900;', null, name);
       this._destroyDialog(name);
+      this.trigger('close', name);
       resolve(dialog);
       if (this.get("active")) {
         var nextDialog = this.getDialog(this.get("active"));
@@ -580,6 +581,8 @@ Manager = Service.extend(Ember.Evented, {
         rejected: reject
       });
     });
+
+    this.trigger('create', dialog);
 
     return promise;
   }
