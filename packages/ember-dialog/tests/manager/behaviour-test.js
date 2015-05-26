@@ -30,7 +30,7 @@ test("The promises should work fine", function() {
   var decline_close = async(function(dialog) { ok(true, "the promise was rejected on decline click"); }, 10000);
 
   run(function() {
-    manager.confirm("Some template goes here").then(accept_close);
+    manager.alert("Some template goes here").then(accept_close);
     run.scheduleOnce('afterRender', this, function() {
       var dialog = manager.getDialog(manager.get('active'));
       var button = dialog.$('.' + dialog.acceptClass);
