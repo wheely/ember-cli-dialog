@@ -1,5 +1,6 @@
 {
   "name": "ember-dialog",
+  "description": "DEPRECATED: this package is archived and no longer maintained. Use ember-dialog instead.",
   "private": true,
   "dependencies": {
     "ember": "1.11.1"

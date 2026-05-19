@@ -1,6 +1,8 @@
 {
   "name": "ember-cli-dialog",
   "version": "2.0.1-0",
+  "private": true,
+  "deprecated": "This package is archived and no longer maintained. Please use ember-dialog (https://github.com/wheely/ember-dialog) instead.",
   "namespace": "Dialog",
   "repository": {
     "type": "git",
